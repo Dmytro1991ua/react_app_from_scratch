@@ -1,7 +1,5 @@
-import React, { ReactElement } from "react";
+import React from 'react';
 
-const App = (): ReactElement => {
-  return <div>React App from scratch</div>;
-};
+const App = () => <div>React App from scratch</div>;
 
 export default App;
