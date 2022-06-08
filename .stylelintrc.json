@@ -22,5 +22,6 @@
     "value-keyword-case": null,
     "string-quotes": "single",
     "csstools/value-no-unknown-custom-properties": true
-  }
+  },
+  "ignoreFiles": ["**/*.{js,jsx,ts,tsx}"]
 }
