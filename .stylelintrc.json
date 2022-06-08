@@ -1,0 +1,26 @@
+{
+  "extends": [
+    "stylelint-config-standard",
+    "stylelint-config-prettier",
+    "stylelint-config-standard-scss",
+    "stylelint-config-css-modules",
+    "stylelint-order",
+    "stylelint-config-idiomatic-order"
+  ],
+  "plugins": ["stylelint-prettier", "stylelint-scss", "stylelint-value-no-unknown-custom-properties"],
+  "rules": {
+    "selector-pseudo-class-no-unknown": true,
+    "selector-class-pattern": "^[a-z][a-z0-9-]+$",
+    "prettier/prettier": true,
+    "property-no-unknown": true,
+    "comment-no-empty": true,
+    "color-no-invalid-hex": true,
+    "shorthand-property-no-redundant-values": true,
+    "color-hex-case": "lower",
+    "function-comma-newline-after": "always-multi-line",
+    "block-no-empty": true,
+    "value-keyword-case": null,
+    "string-quotes": "single",
+    "csstools/value-no-unknown-custom-properties": true
+  }
+}
