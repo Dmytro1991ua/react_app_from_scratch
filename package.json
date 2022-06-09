@@ -24,6 +24,7 @@
     "@typescript-eslint/parser": "^5.27.1",
     "babel-loader": "^8.2.5",
     "eslint": "^8.17.0",
+    "eslint-config-airbnb-typescript": "^17.0.0",
     "eslint-config-prettier": "^8.5.0",
     "eslint-import-resolver-typescript": "^2.7.1",
     "eslint-plugin-import": "^2.26.0",
@@ -34,6 +35,8 @@
     "file-loader": "^6.2.0",
     "fork-ts-checker-webpack-plugin": "^7.2.11",
     "html-webpack-plugin": "^5.5.0",
+    "husky": "^8.0.0",
+    "lint-staged": "^13.0.1",
     "prettier": "^2.6.2",
     "sass": "^1.52.2",
     "sass-loader": "^13.0.0",
@@ -58,9 +61,13 @@
   "scripts": {
     "start": "webpack-dev-server --mode development --open",
     "build": "webpack --mode production",
-    "prettier": "prettier --write src/**/*.ts{,x}",
-    "lint": "tsc --noEmit && eslint src/**/*.ts{,x} --quiet --fix",
-    "stylelint": "stylelint \"./src/**/*.{css,scss,module.scss}\""
+    "lint": "npm run _eslint & npm run _stylelint",
+    "lint:fix": "npm run _prettier && npm run _eslint -- --fix && npm run _stylelint -- --fix",
+    "_prettier": "prettier --write ./src/",
+    "_eslint": "eslint ./src/ --ext .ts,.tsx --max-warnings=0",
+    "_stylelint": "stylelint \"./src/**/*.{css,scss,module.scss}\"",
+    "prepare": "husky install",
+    "pre-commit": "lint-staged"
   },
   "repository": {
     "type": "git",
@@ -71,5 +78,23 @@
   "bugs": {
     "url": "https://github.com/Dmytro1991ua/react_app_from_scratch/issues"
   },
-  "homepage": "https://github.com/Dmytro1991ua/react_app_from_scratch#readme"
+  "homepage": "https://github.com/Dmytro1991ua/react_app_from_scratch#readme",
+  "husky": {
+    "hooks": {
+      "pre-commit": "lint-staged"
+    }
+  },
+  "lint-staged": {
+    "*.{js,jsx,ts,tsx}": [
+      "prettier --write",
+      "eslint --cache --fix --max-warnings=0"
+    ],
+    "*.{html,md,mdx}": [
+      "prettier --write"
+    ],
+    "*.{css,scss}": [
+      "prettier --write",
+      "stylelint --fix scss"
+    ]
+  }
 }
