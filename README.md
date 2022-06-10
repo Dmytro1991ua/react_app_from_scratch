@@ -42,8 +42,8 @@ The main purpose of this project is to create a React application from scratch w
 
 The project itself is not something fancy and complex. Consist of simple page with Header and main part and applied styled, because the main puppose was to acttually set up project from scratch, set up needed enviroment, etc.
 
-During development phase of this project, I was able to set up a project enviroment from scratch, get familiar with webpack, webserver, loaders, needed npm packeges to set up a project enviroment, git and github flow and deploy project on `Github Pages
+During development phase of this project, I was able to set up a project enviroment from scratch, get familiar with webpack, webserver, loaders, needed npm packeges to set up a project enviroment, git and github flow and deploy project on `Github Pages`
 
 The main challenges that I faced were related to setuping project from scratch, finding and implementing different approaches and solutions, hooking up webpack with another packeges, configurating `Eslint`, `Prettier`, `Stylelint`, `Babel`, `Typescript`, `Webpack`,  `pre-commit hooks`, `github actions`, etc.
 
-Techologies, tools and stack: `React`, `Typescript`, `Sass`, `Eslint`, `Prettier`, `Stylelint`, `Babel`, `Husky`, `Github Actions`, `Github Pages`
+Techologies, tools and stack: `React`, `Typescript`, `Sass`, `Eslint`, `Prettier`, `Stylelint`, `Babel`, `Husky`, `Github Actions`, `Github Pages`, etc.
