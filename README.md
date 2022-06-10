@@ -1,46 +1,45 @@
-usage: git [--version] [--help] [-C <path>] [-c <name>=<value>]
-[--exec-path[=<path>]] [--html-path] [--man-path] [--info-path]
-[-p | --paginate | -P | --no-pager] [--no-replace-objects] [--bare]
-[--git-dir=<path>] [--work-tree=<path>] [--namespace=<name>]
-[--super-prefix=<path>] [--config-env=<name>=<envvar>]
-<command> [<args>]
+## Project Name & Pitch
 
-These are common Git commands used in various situations:
+react_app_from_scratch
 
-start a working area (see also: git help tutorial)
-clone Clone a repository into a new directory
-init Create an empty Git repository or reinitialize an existing one
+Project created from scratch via webpack with additional adding and setting up of eslint, prettier, stylelint, babel, typescript packages, webpack itself, pre-commit hooks and github actions
 
-work on the current change (see also: git help everyday)
-add Add file contents to the index
-mv Move or rename a file, a directory, or a symlink
-restore Restore working tree files
-rm Remove files from the working tree and from the index
-sparse-checkout Initialize and modify the sparse-checkout
+## Project Screen Shot(s)
 
-examine the history and state (see also: git help revisions)
-bisect Use binary search to find the commit that introduced a bug
-diff Show changes between commits, commit and working tree, etc
-grep Print lines matching a pattern
-log Show commit logs
-show Show various types of objects
-status Show the working tree status
+![screencapture-localhost-5000-2022-06-10-12_17_32](https://user-images.githubusercontent.com/61331410/173034459-e8dc9111-4a7a-406f-8996-c5b36f47ba38.png)
 
-grow, mark and tweak your common history
-branch List, create, or delete branches
-commit Record changes to the repository
-merge Join two or more development histories together
-rebase Reapply commits on top of another base tip
-reset Reset current HEAD to the specified state
-switch Switch branches
-tag Create, list, delete or verify a tag object signed with GPG
+## Installation and Setup Instructions
 
-collaborate (see also: git help workflows)
-fetch Download objects and refs from another repository
-pull Fetch from and integrate with another repository or a local branch
-push Update remote refs along with associated objects
+Clone down this repository. You will need `node` and `npm` installed globally on your machine.  
 
-'git help -a' and 'git help -g' list available subcommands and some
-concept guides. See 'git help <command>' or 'git help <concept>'
-to read about a specific subcommand or concept.
-See 'git help git' for an overview of the system.
+Installation:
+
+`npm install`  
+
+To Run Test Suite:  
+
+`npm run test`  
+
+To Start Server:
+
+`npm run start`  
+
+To Build project:
+
+`npm run build` 
+
+To Visit App:
+
+`localhost:5000`  
+
+## Reflection
+
+The main purpose of this project is to create a React application from scratch without using `create-react-app`. Instead, a webpack was introduced. Apart from that, some additional packages and configurations were added and setted up, such as `Eslint`, `Prettier`, `Stylelint`, `Babel`, `Typescript`, `Webpack` itself, `pre-commit hooks`, `github actions`, etc.
+
+The project itself is not something fancy and complex. Consist of simple page with Header and main part and applied styled, because the main puppose was to acttually set up project from scratch, set up needed enviroment, etc.
+
+During development phase of this project, I was able to set up a project enviroment from scratch, get familiar with webpack, webserver, loaders, needed npm packeges to set up a project enviroment, git and github flow etc.
+
+The main challenges that I faced were related to setuping project from scratch, finding and implementing different approaches and solutions, hooking up webpack with another packeges, configurating `Eslint`, `Prettier`, `Stylelint`, `Babel`, `Typescript`, `Webpack`,  `pre-commit hooks`, `github actions`, etc.
+
+Techologies, tools and stack: `React`, `Typescript`, `Sass`, `Eslint`, `Prettier`, `Stylelint`, `Babel`, `Husky`, `Github Actions`.
