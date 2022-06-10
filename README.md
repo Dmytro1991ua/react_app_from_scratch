@@ -28,6 +28,10 @@ To Build project:
 
 `npm run build` 
 
+To Deploy on Github Pages:
+
+`npm run deploy` 
+
 To Visit App:
 
 `localhost:5000`  
