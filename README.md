@@ -46,4 +46,4 @@ During development phase of this project, I was able to set up a project envirom
 
 The main challenges that I faced were related to setuping project from scratch, finding and implementing different approaches and solutions, hooking up webpack with another packeges, configurating `Eslint`, `Prettier`, `Stylelint`, `Babel`, `Typescript`, `Webpack`,  `pre-commit hooks`, `github actions`, etc.
 
-Techologies, tools and stack: `React`, `Typescript`, `Sass`, `Eslint`, `Prettier`, `Stylelint`, `Babel`, `Husky`, `Github Actions`.
+Techologies, tools and stack: `React`, `Typescript`, `Sass`, `Eslint`, `Prettier`, `Stylelint`, `Babel`, `Husky`, `Github Actions`, `Github Pages`
