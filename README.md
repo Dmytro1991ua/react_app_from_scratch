@@ -1,6 +1,6 @@
 ## Project Name & Pitch
 
-react_app_from_scratch
+### react_app_from_scratch
 
 Project created from scratch via webpack with additional adding and setting up of eslint, prettier, stylelint, babel, typescript packages, webpack itself, pre-commit hooks and github actions
 
