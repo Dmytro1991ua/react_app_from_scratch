@@ -7,7 +7,7 @@ module.exports = {
   entry: './src/index.tsx',
   output: { path: path.join(__dirname, 'build'), filename: 'build.js' },
   resolve: {
-    extensions: ['.tsx', '.ts', '.js', '.json'],
+    extensions: ['.tsx', '.ts', '.js', '.json', '.css', '.scss'],
   },
   module: {
     rules: [
@@ -28,11 +28,21 @@ module.exports = {
       },
       {
         test: /\.(css|scss)$/,
-        use: ['style-loader', 'css-loader', 'sass-loader'],
+        use: [
+          'style-loader',
+          'css-loader',
+          'sass-loader',
+          {
+            loader: 'sass-resources-loader',
+            options: {
+              resources: './src/styles/utils/_variables.scss',
+            },
+          },
+        ],
       },
       {
         test: /\.(jpg|jpeg|png|gif|mp3|svg)$/,
-        use: ['file-loader'],
+        type: 'asset/resource',
       },
     ],
   },
