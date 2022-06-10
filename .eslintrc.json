@@ -39,6 +39,13 @@
         "unnamedComponents": "arrow-function"
       }
     ],
+    "lines-between-class-members": [
+      "error",
+      "always",
+      {
+        "exceptAfterSingleLine": true
+      }
+    ],
     "linebreak-style": ["error", "windows"],
     "react/react-in-jsx-scope": "off",
     "quotes": ["error", "single"]
