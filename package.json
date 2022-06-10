@@ -1,5 +1,5 @@
 {
-  "homepage": "https://github.com/Dmytro1991ua/react_app_from_scratch",
+  "homepage": "https://dmytro1991ua.github.io/react_app_from_scratch",
   "name": "react_app_from_scratch",
   "version": "1.0.0",
   "description": "Create a react app from scratch by using webpack and setup environment that includes typescript, linters, prettier, etc.",
