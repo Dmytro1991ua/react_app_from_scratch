@@ -2,7 +2,7 @@
 
 ### react_app_from_scratch
 
-Project created from scratch via webpack with additional adding and setting up of eslint, prettier, stylelint, babel, typescript packages, webpack itself, pre-commit hooks and github actions
+Project created from scratch via webpack with additional adding and setting up of eslint, prettier, stylelint, babel, typescript packages, webpack itself, pre-commit hooks, github actions and github pages for deployment purposes
 
 ## Project Screen Shot(s)
 
@@ -38,7 +38,7 @@ The main purpose of this project is to create a React application from scratch w
 
 The project itself is not something fancy and complex. Consist of simple page with Header and main part and applied styled, because the main puppose was to acttually set up project from scratch, set up needed enviroment, etc.
 
-During development phase of this project, I was able to set up a project enviroment from scratch, get familiar with webpack, webserver, loaders, needed npm packeges to set up a project enviroment, git and github flow etc.
+During development phase of this project, I was able to set up a project enviroment from scratch, get familiar with webpack, webserver, loaders, needed npm packeges to set up a project enviroment, git and github flow and deploy project on `Github Pages
 
 The main challenges that I faced were related to setuping project from scratch, finding and implementing different approaches and solutions, hooking up webpack with another packeges, configurating `Eslint`, `Prettier`, `Stylelint`, `Babel`, `Typescript`, `Webpack`,  `pre-commit hooks`, `github actions`, etc.
 
