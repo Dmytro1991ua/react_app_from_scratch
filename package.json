@@ -1,4 +1,5 @@
 {
+  "homepage": "https://github.com/Dmytro1991ua/react_app_from_scratch",
   "name": "react_app_from_scratch",
   "version": "1.0.0",
   "description": "Create a react app from scratch by using webpack and setup environment that includes typescript, linters, prettier, etc.",
@@ -34,6 +35,7 @@
     "eslint-plugin-react": "^7.30.0",
     "eslint-plugin-react-hooks": "^4.5.0",
     "fork-ts-checker-webpack-plugin": "^7.2.11",
+    "gh-pages": "^4.0.0",
     "html-webpack-plugin": "^5.5.0",
     "husky": "^8.0.0",
     "lint-staged": "^13.0.1",
@@ -69,7 +71,9 @@
     "_eslint": "eslint ./src/ --ext .ts,.tsx --max-warnings=0 --fix",
     "_stylelint": "stylelint \"./src/**/*.{css,scss,module.scss}\"",
     "prepare": "husky install",
-    "pre-commit": "lint-staged"
+    "pre-commit": "lint-staged",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build"
   },
   "repository": {
     "type": "git",
@@ -80,7 +84,6 @@
   "bugs": {
     "url": "https://github.com/Dmytro1991ua/react_app_from_scratch/issues"
   },
-  "homepage": "https://github.com/Dmytro1991ua/react_app_from_scratch#readme",
   "husky": {
     "hooks": {
       "pre-commit": "lint-staged"

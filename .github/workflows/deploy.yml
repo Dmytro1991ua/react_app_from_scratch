@@ -28,3 +28,8 @@ jobs:
           npm run lint:fix
           npm run test
           npm run build
+      - name: deploy to gh-pages
+      - uses: peaceiris/actions-gh-pages@v3
+      with:
+        deploy_key: ${{ secrets.ACTIONS_DEPLOY_ACCESS_TOKEN }}
+        publish_dir: ./build
