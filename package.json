@@ -60,8 +60,8 @@
     "webpack-dev-server": "^4.9.2"
   },
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
     "start": "webpack-dev-server --mode development --open",
+    "test": "echo \"No test specified\"",
     "build": "webpack --mode production",
     "lint": "npm run _eslint & npm run _stylelint",
     "lint:fix": "npm run _prettier && npm run _eslint -- --fix && npm run _stylelint -- --fix",
